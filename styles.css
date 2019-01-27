@@ -1,0 +1,14 @@
+.cloud-header,
+.c9-menu-bar,
+#loadingide,
+body.login-body {
+    -webkit-app-region: drag;
+}
+
+body:not(.full-screen) .c9-mbar-cont {
+    padding-left: 100px !important;
+}
+
+body:not(.full-screen) .c9-mbar-minimize {
+    left: 75px !important;
+}

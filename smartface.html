@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smartface</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        #content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <webview id="content" src="https://cloud.smartface.io/" webpreferences="nativeWindowOpen=true,navigateOnDragDrop=true,nodeIntegration=false"></webview>
+
+    <script>
+        onload = () => {
+            let webview = document.querySelector('webview');
+
+            let loadstart = () => {
+                debugger;
+            };
+
+            let loadstop = () => {
+                debugger;
+            };
+
+            let newWindow = () => {
+                console.log("alper")
+            }
+
+            webview.addEventListener('did-start-loading', loadstart);
+            webview.addEventListener('did-stop-loading', loadstop);
+            webview.addEventListener('new-window', newWindow);
+        }
+    </script>
+</body>
+
+</html>
